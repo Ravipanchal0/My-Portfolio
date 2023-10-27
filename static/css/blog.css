@@ -1,0 +1,45 @@
+:root {
+  --text-color: #9e9fa0;
+  --hover: #00a3e1;
+  --bg-primary: #262c32;
+  --bg-profile: #383838;
+  --border-bottom: #202226;
+  --main-heading: #14beff;
+  --primary-color: #00a2e0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  font-family: "segoe UI";
+}
+.blogContainer {
+  position: relative;
+  background-color: var(--bg-primary);
+  min-height: 100vh;
+  color: white;
+  padding: 20px;
+}
+.blogContainer .heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 40px;
+  color: var(--main-heading);
+  border-bottom: 3px solid #3d3e3e;
+  border-bottom-style: dashed;
+}
+.blogContainer .heading h1 {
+  font-size: 3rem;
+  font-family: "Alegreya", serif;
+}
+.blogContainer .heading .icon {
+  font-size: 3rem;
+}
+.main {
+  margin: 30px;
+}

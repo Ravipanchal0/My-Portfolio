@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  font-family: "segoe UI";
+  /* overflow-x: hidden; */
+}
+.homecontainer {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: url(../../static/img/bg1.jpg) no-repeat center center/cover;
+}
+.homecontainer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background: black;
+}
+.homecontainer h1 {
+  font-size: 7rem;
+  color: white;
+  z-index: 1;
+  font-family: "Alegreya", serif;
+  margin-bottom: -20px;
+}
+.homecontainer #panchal {
+  color: var(--main-heading);
+}
+.homecontainer .slogan {
+  color: white;
+  font-size: 2rem;
+  z-index: 1;
+  font-weight: 400;
+}
+.element {
+  padding: 3px 0;
+  border-bottom: 3px solid var(--main-heading);
+  font-weight: 500;
+  font-family: "Bree Serif", serif;
+  letter-spacing: 1px;
+}

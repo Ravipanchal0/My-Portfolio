@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:wght@500&family=Balsamiq+Sans:wght@400;700&family=Bree+Serif&family=Kreon:wght@300;400;500&family=Manrope&family=Merriweather+Sans:wght@300;400;500&family=Merriweather:wght@300;400&family=Nunito+Sans:wght@300;400;500;600;700;800;900&family=Nunito:wght@300;400;500&family=Open+Sans&family=Playpen+Sans:wght@400;600;700&family=Poppins:wght@300;400;600&family=Roboto+Slab&family=Roboto:wght@300;400;500;700&family=Sono:wght@500&family=Source+Serif+4&family=Tilt+Neon&family=Ubuntu&display=swap");
+:root {
+  --text-color: #9e9fa0;
+  --hover: #00a3e1;
+  --bg-primary: #262c32;
+  --bg-profile: #383838;
+  --border-bottom: #202226;
+  --main-heading: #14beff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  font-family: "segoe UI";
+}
+.navbar {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 220px;
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+  overflow: hidden;
+}
+.navbar .profile {
+  width: 100%;
+  height: 37%;
+  background-color: var(--bg-profile);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.navbar .profile img {
+  width: inherit;
+  /* filter: drop-shadow(-4px 0px 2px black); */
+}
+.navbar .profile::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 45px;
+  background-color: #0f93c6;
+  width: 100%;
+  opacity: 0.8;
+}
+.navbar .profile::before {
+  content: "RAVI PANCHAL";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 45px;
+  color: white;
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Alegreya", serif;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+.navigation {
+  width: 100%;
+}
+.navigation .navMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.navigation .navMenu li {
+  list-style: none;
+  border-bottom: 1px solid var(--border-bottom);
+  width: 100%;
+  margin: 5px 0;
+  padding-bottom: 8px;
+}
+.navigation .navMenu li a {
+  color: var(--text-color);
+  padding: 8px 0px;
+  text-decoration: none;
+  margin-left: 45px;
+  transition: all 0.1s;
+  font-family: "Nunito", sans-serif;
+  letter-spacing: 1px;
+}
+.navigation .navMenu li a i {
+  margin-right: 10px;
+}
+.navigation .navMenu li a:hover {
+  color: var(--hover);
+}
+.foot {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+.foot .social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+.foot .social li {
+  padding: 0 3px;
+  list-style: none;
+  background-color: white;
+  border-radius: 3px;
+  margin: 0 3px;
+  opacity: 0.7;
+}
+.foot .social li a {
+  color: var(--text-color);
+  font-size: 17px;
+}
+.foot .social li:hover {
+  opacity: 1;
+}
+.foot .social li:hover a {
+  color: var(--hover);
+}
+.foot .copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--text-color);
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  position: relative;
+  top: 0;
+  left: 220px;
+  width: calc(100% - 220px);
+  min-height: 100vh;
+}
+
+/* -------------- Scrollbar ----------------*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+  /* border-radius: 5px; */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--hover);
+}

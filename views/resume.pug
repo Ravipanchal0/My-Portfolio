@@ -1,0 +1,89 @@
+extends base.pug
+
+block style
+    style
+        include ../static/css/base.css
+        include ../static/css/resume.css
+
+
+block content
+  div.resumecontainer
+        div.heading
+            h1 My Resume .
+            i.fa-solid.fa-id-card.icon
+        div.main
+          div.mainsection
+            h4.sectionHeading EXPERIENCE
+            div.projects
+              h3.myproject My Projects
+              ul
+                li.project-detail
+                  span.line
+                  h5.project-name Project 1
+                  p.project-desc India, officially the Republic of India, is a country in South Asia. It is the seventh-largest country by area; the most populous country as of June 2023;
+                li.project-detail
+                  span.line
+                  h5.project-name Project 1
+                  p.project-desc India, officially the Republic of India, is a country in South Asia. It is the seventh-largest country by area; the most populous country as of June 2023;
+                li.project-detail
+                  span.line
+                  h5.project-name Project 1
+                  p.project-desc India, officially the Republic of India, is a country in South Asia. It is the seventh-largest country by area; the most populous country as of June 2023;
+          div.mainsection
+            h4.sectionHeading EDUCATION
+            ul.education
+              li.eduction-details
+                span.line
+                div.year
+                  p.to 2023
+                  p.from 2019
+                h5.class-name Bachelor of Technology (Mechanical Engineering)
+                p.academy Govt. Engineering College, Ujjain
+                p.class-detail India, officially the Republic of India, is a country in South Asia. It is the seventh-largest country by area; the most populous country as of June 2023;
+              li.eduction-details
+                span.line
+                div.year
+                  p.to 2018
+                  p.from 2017
+                h5.class-name High Secondary school - 12th
+                p.academy Govt. Excellence Bal Vinay Mandir H S School, Indore
+                p.class-detail India, officially the Republic of India, is a country in South Asia. It is the seventh-largest country by area; the most populous country as of June 2023;
+              li.eduction-details
+                span.line
+                div.year
+                  p.to 2016
+                  p.from 2015
+                h5.class-name High School - 10th
+                p.academy Govt. High School Baloda(takun), sanwer
+                p.class-detail India, officially the Republic of India, is a country in South Asia. It is the seventh-largest country by area; the most populous country as of June 2023;
+        div.skills
+          div.skillSection
+            h2.sectionHeading DESIGN SKILLS
+            .skill-main
+              .skill-wrrap
+                .skill-name #[img(src="../../static/img/xd.png").icon] Adobe XD
+                .skill-bar
+                  .skill-per(per='30').xd
+          div.skillSection
+            h2.sectionHeading CODING SKILLS
+            .skill-main
+              .skill-wrrap
+                .skill-name #[img(src="../../static/img/html.png").icon] HTML
+                .skill-bar
+                  .skill-per(per='80').html
+              .skill-wrrap
+                .skill-name #[img(src="../../static/img/css.png").icon] CSS
+                .skill-bar
+                  .skill-per(per='85').css
+              .skill-wrrap
+                .skill-name #[img(src="../../static/img/js.png").icon] Javascript
+                .skill-bar
+                  .skill-per(per='65').js
+              .skill-wrrap
+                .skill-name #[img(src="../../static/img/tcss.png").icon] Tailwind CSS
+                .skill-bar
+                  .skill-per(per='75').tcss
+              .skill-wrrap
+                .skill-name #[img(src="../../static/img/react.png").icon] React JS
+                .skill-bar
+                  .skill-per(per='45').react

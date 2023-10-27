@@ -1,0 +1,34 @@
+doctype html
+html
+  head
+    title Ravi Panchal - #{title}
+    block style
+        style
+            include ../static/css/base.css
+    block scripts
+      script(src='../static/index.js')
+      <script src="https://kit.fontawesome.com/fe1b9c3ff1.js" crossorigin="anonymous"></script>
+       <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  body
+    nav.navbar
+        div.profile
+            img(src="../static/img/myprofile.png", alt="Ravi Panchal")
+        div.navigation
+            ul.navMenu
+                li #[a(href="/") #[i(class="fa-solid fa-house")] Home]
+                li #[a(href="/about") #[i(class="fa-solid fa-user")] About Me]
+                li #[a(href="/resume") #[i(class="fa-solid fa-id-card")] Resume]
+                li #[a(href="/portfolio") #[i(class="fa-solid fa-briefcase")] Portfolio]
+                li #[a(href="/blog") #[i(class="fa-solid fa-book")] Blog]
+                li #[a(href="/contact") #[i(class="fa-solid fa-envelope")] Contact]
+        div.foot
+            div.social
+                li.icon #[a(href="/") #[i(class="fa-brands fa-twitter")]]
+                li.icon #[a(href="/") #[i(class="fa-brands fa-facebook")]]
+                li.icon #[a(href="/") #[i(class="fa-brands fa-instagram")]]
+                li.icon #[a(href="/") #[i(class="fa-brands fa-github")]]
+            div.copyright
+                p Copyright &copy; 2023 
+                p All Right Reserve.
+    div.container
+        block content
