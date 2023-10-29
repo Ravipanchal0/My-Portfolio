@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Alegreya:wght@500&family=Balsamiq+Sans:wght@400;700&family=Bree+Serif&family=Kreon:wght@300;400;500&family=Manrope&family=Merriweather+Sans:wght@300;400;500&family=Merriweather:wght@300;400&family=Nunito+Sans:wght@300;400;500;600;700;800;900&family=Nunito:wght@300;400;500&family=Open+Sans&family=Playpen+Sans:wght@400;600;700&family=Poppins:wght@300;400;600&family=Roboto+Slab&family=Roboto:wght@300;400;500;700&family=Sono:wght@500&family=Source+Serif+4&family=Tilt+Neon&family=Ubuntu&display=swap");
 :root {
   --text-color: #9e9fa0;
   --hover: #00a3e1;
@@ -39,7 +40,96 @@ body {
 }
 .contactContainer .heading .icon {
   font-size: 3rem;
+  animation: bubbling 0.7s alternate infinite;
+}
+@keyframes bubbling {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.8);
+  }
 }
 .main {
   margin: 30px;
+}
+.contact {
+  /* background-color: red; */
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+}
+.input-box {
+  /* width: 100%; */
+  position: relative;
+  margin: 50px 0;
+}
+.input-box .input {
+  width: 60%;
+  height: 38px;
+  padding: 3px 8px;
+  outline: none;
+  background: var(--border-bottom);
+  border: 2px solid var(--bg-profile);
+  border-radius: 4px;
+  color: white;
+  font-size: 17px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.input-box label {
+  position: absolute;
+  top: 50%;
+  left: 21%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: 0.3s;
+  color: var(--text-color);
+}
+.input:focus {
+  box-shadow: 0 0 1px 2px var(--hover);
+}
+.input:focus ~ label {
+  top: -15px;
+  left: calc(21% - 8px);
+  color: white;
+}
+#msg {
+  height: 200px;
+  resize: none;
+}
+#msg-label {
+  top: 15px;
+}
+#msg:focus ~ #msg-label {
+  top: -15px;
+}
+.contact-detail {
+  /* background-color: green; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  margin: 30px;
+}
+.connect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 22px;
+  transition: 0.3s;
+}
+.connect i {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+.number {
+  font-family: "alegreya";
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 30px;
+}
+.connect:hover {
+  transform: scale(0.8);
 }

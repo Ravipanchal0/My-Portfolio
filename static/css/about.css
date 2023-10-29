@@ -4,16 +4,6 @@
   --bg-primary: #2c2d2f;
   --text-color: #9e9fa0;
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-html,
-body {
-  width: 100%;
-  font-family: "segoe UI";
-}
 .aboutcontainer {
   position: relative;
   background-color: var(--bg-primary);
@@ -36,6 +26,15 @@ body {
 }
 .aboutcontainer .heading .icon {
   font-size: 3rem;
+  animation: bubbling 0.7s alternate infinite;
+}
+@keyframes bubbling {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.8);
+  }
 }
 .aboutme {
   display: flex;
@@ -72,33 +71,6 @@ body {
 .aboutme .personalInfo .contact ul li span {
   font-weight: 500;
   border-bottom: 2px solid var(--primary-color);
-}
-.btn {
-  padding: 10px 30px;
-  background: transparent;
-  border: 2px solid var(--primary-color);
-  letter-spacing: 1px;
-  font-size: 16px;
-  color: var(--primary-color);
-  cursor: pointer;
-  font-weight: 400;
-  transition: all 0.2s ease-in-out;
-  font-family: "Roboto", sans-serif;
-}
-.btn:hover {
-  background-color: var(--primary-color);
-  color: white;
-  transform: scale(0.98);
-}
-
-.sectionHeading {
-  font-size: 1.8rem;
-  margin-bottom: 60px;
-  text-decoration: underline var(--primary-color);
-  text-underline-offset: 8px;
-  text-align: center;
-  font-family: "Ubuntu", sans-serif;
-  letter-spacing: 2px;
 }
 .services,
 .client {

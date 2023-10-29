@@ -117,18 +117,20 @@ body {
   background-color: white;
   border-radius: 3px;
   margin: 0 3px;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 .foot .social li a {
-  color: var(--text-color);
+  color: black;
   font-size: 17px;
+  opacity: 0.8;
 }
-.foot .social li:hover {
+.foot .social li:hover,
+.foot .social li:hover a {
   opacity: 1;
 }
-.foot .social li:hover a {
+/* .foot .social li:hover a {
   color: var(--hover);
-}
+} */
 .foot .copyright {
   display: flex;
   align-items: center;
@@ -144,6 +146,32 @@ body {
   left: 220px;
   width: calc(100% - 220px);
   min-height: 100vh;
+}
+.sectionHeading {
+  font-size: 1.8rem;
+  margin-bottom: 60px;
+  text-decoration: underline var(--primary-color);
+  text-underline-offset: 8px;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  letter-spacing: 2px;
+}
+.btn {
+  padding: 10px 30px;
+  background: transparent;
+  border: 2px solid var(--primary-color);
+  letter-spacing: 1px;
+  font-size: 16px;
+  color: var(--primary-color);
+  cursor: pointer;
+  font-weight: 400;
+  transition: all 0.2s ease-in-out;
+  font-family: "Roboto", sans-serif;
+}
+.btn:hover {
+  background-color: var(--primary-color);
+  color: white;
+  transform: scale(0.98);
 }
 
 /* -------------- Scrollbar ----------------*/

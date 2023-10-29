@@ -39,6 +39,15 @@ body {
 }
 .portfolioContainer .heading .icon {
   font-size: 3rem;
+  animation: bubbling 0.7s alternate infinite;
+}
+@keyframes bubbling {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.8);
+  }
 }
 .main {
   margin: 30px;
