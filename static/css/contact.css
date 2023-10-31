@@ -1,8 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Alegreya:wght@500&family=Balsamiq+Sans:wght@400;700&family=Bree+Serif&family=Kreon:wght@300;400;500&family=Manrope&family=Merriweather+Sans:wght@300;400;500&family=Merriweather:wght@300;400&family=Nunito+Sans:wght@300;400;500;600;700;800;900&family=Nunito:wght@300;400;500&family=Open+Sans&family=Playpen+Sans:wght@400;600;700&family=Poppins:wght@300;400;600&family=Roboto+Slab&family=Roboto:wght@300;400;500;700&family=Sono:wght@500&family=Source+Serif+4&family=Tilt+Neon&family=Ubuntu&display=swap");
 :root {
   --text-color: #9e9fa0;
   --hover: #00a3e1;
-  --bg-primary: #262c32;
+  --bg-primary: #272829;
   --bg-profile: #383838;
   --border-bottom: #202226;
   --main-heading: #14beff;
@@ -18,14 +17,8 @@ body {
   width: 100%;
   font-family: "segoe UI";
 }
-.contactContainer {
-  position: relative;
-  background-color: var(--bg-primary);
-  min-height: 100vh;
-  color: white;
-  padding: 20px;
-}
-.contactContainer .heading {
+
+.heading {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -34,11 +27,11 @@ body {
   border-bottom: 3px solid #3d3e3e;
   border-bottom-style: dashed;
 }
-.contactContainer .heading h1 {
+.heading h1 {
   font-size: 3rem;
   font-family: "Alegreya", serif;
 }
-.contactContainer .heading .icon {
+.heading .icon {
   font-size: 3rem;
   animation: bubbling 0.7s alternate infinite;
 }
@@ -57,12 +50,11 @@ body {
   /* background-color: red; */
   text-align: center;
   width: 100%;
-  padding: 20px;
 }
 .input-box {
   /* width: 100%; */
   position: relative;
-  margin: 50px 0;
+  margin: 40px 0;
 }
 .input-box .input {
   width: 60%;

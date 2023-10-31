@@ -1,17 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Alegreya:wght@500&family=Balsamiq+Sans:wght@400;700&family=Bree+Serif&family=Kreon:wght@300;400;500&family=Manrope&family=Merriweather+Sans:wght@300;400;500&family=Merriweather:wght@300;400&family=Nunito+Sans:wght@300;400;500;600;700;800;900&family=Nunito:wght@300;400;500&family=Open+Sans&family=Playpen+Sans:wght@400;600;700&family=Poppins:wght@300;400;600&family=Roboto+Slab&family=Roboto:wght@300;400;500;700&family=Sono:wght@500&family=Source+Serif+4&family=Tilt+Neon&family=Ubuntu&display=swap");
 :root {
   --primary-color: #00a2e0;
-  --bg-primary: #2c2d2f;
+  --bg-primary: #272829;
   --text-color: #9e9fa0;
 }
-.aboutcontainer {
-  position: relative;
-  background-color: var(--bg-primary);
-  min-height: 100vh;
-  color: white;
-  padding: 20px;
-}
-.aboutcontainer .heading {
+.heading {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -20,11 +12,11 @@
   border-bottom: 3px solid #3d3e3e;
   border-bottom-style: dashed;
 }
-.aboutcontainer .heading h1 {
+.heading h1 {
   font-size: 3rem;
   font-family: "Alegreya", serif;
 }
-.aboutcontainer .heading .icon {
+.heading .icon {
   font-size: 3rem;
   animation: bubbling 0.7s alternate infinite;
 }
@@ -42,18 +34,30 @@
   margin: 40px;
 }
 .aboutme .passion {
-  max-width: 50%;
+  max-width: 60%;
 }
 .aboutme .passion h2 {
-  margin-bottom: 5px;
+  margin-bottom: 8px;
+  font-size: 30px;
+  font-family: "Bree Serif", serif;
+  font-weight: 500;
+  letter-spacing: 1px;
 }
 .aboutme .passion p {
   margin-left: 16px;
   color: #e0e0e0;
+  font-size: 17px;
+  text-align: justify;
+  font-style: italic;
 }
 
 .aboutme .personalInfo {
   max-width: 26%;
+}
+.aboutme .personalInfo h2 {
+  font-family: "Bree Serif", serif;
+  font-weight: 500;
+  letter-spacing: 1px;
 }
 
 .aboutme .personalInfo .contact {
@@ -78,14 +82,16 @@
   align-items: center;
   justify-content: space-evenly;
 }
+.servicesection {
+  margin: 60px 0;
+}
 .servicesection .services .servicebox {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 8px;
-  margin: 0 21px;
-  width: 26%;
+  margin: 0 37px;
 }
 .servicesection .services .servicebox .serviceIcon {
   font-size: 3.5rem;
@@ -94,10 +100,14 @@
 }
 .servicesection .services .servicebox h4 {
   font-size: 22px;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+  font-weight: 600;
 }
 .servicesection .services .servicebox p {
-  font-size: 18px;
+  font-size: 17px;
   color: var(--text-color);
+  text-align: justify;
 }
 .clients {
   margin: 60px 0;

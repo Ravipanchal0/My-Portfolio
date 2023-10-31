@@ -1,7 +1,7 @@
 :root {
   --text-color: #9e9fa0;
   --hover: #00a3e1;
-  --bg-primary: #262c32;
+  --bg-primary: #272829;
   --bg-profile: #383838;
   --border-bottom: #202226;
   --main-heading: #14beff;
@@ -17,14 +17,7 @@ body {
   width: 100%;
   font-family: "segoe UI";
 }
-.portfolioContainer {
-  position: relative;
-  background-color: var(--bg-primary);
-  min-height: 100vh;
-  color: white;
-  padding: 20px;
-}
-.portfolioContainer .heading {
+.heading {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -33,11 +26,11 @@ body {
   border-bottom: 3px solid #3d3e3e;
   border-bottom-style: dashed;
 }
-.portfolioContainer .heading h1 {
+.heading h1 {
   font-size: 3rem;
   font-family: "Alegreya", serif;
 }
-.portfolioContainer .heading .icon {
+.heading .icon {
   font-size: 3rem;
   animation: bubbling 0.7s alternate infinite;
 }
@@ -51,4 +44,5 @@ body {
 }
 .main {
   margin: 30px;
+  color: #9e9fa0;
 }

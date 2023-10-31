@@ -6,30 +6,58 @@ html
     block style
         style
             include ../static/css/base.css
-    block scripts
-      script(src='../static/index.js')
-      <script src="https://kit.fontawesome.com/fe1b9c3ff1.js" crossorigin="anonymous"></script>
-       <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    
   body
     nav.navbar
         div.profile
             img(src="../static/img/myprofile.png", alt="Ravi Panchal")
         div.navigation
-            ul.navMenu
-                li #[a(href="/") #[i(class="fa-solid fa-house")] Home]
-                li #[a(href="/about") #[i(class="fa-solid fa-user")] About Me]
-                li #[a(href="/resume") #[i(class="fa-solid fa-id-card")] Resume]
-                li #[a(href="/portfolio") #[i(class="fa-solid fa-briefcase")] Portfolio]
-                li #[a(href="/blog") #[i(class="fa-solid fa-book")] Blog]
-                li #[a(href="/contact") #[i(class="fa-solid fa-envelope")] Contact]
+            ul#myDIV.navMenu
+                li
+                    a.link(href="/")
+                        i(class="fa-solid fa-house")
+                        |Home
+                li
+                    a.link(href="/about")
+                        i(class="fa-solid fa-user")
+                        |About Me
+                li
+                    a.link(href="/resume")
+                        i(class="fa-solid fa-id-card")
+                        |Resume
+                li
+                    a.link(href="/portfolio")
+                        i(class="fa-solid fa-briefcase")
+                        |Portfolio
+                li
+                    a.link(href="/blog")
+                        i(class="fa-solid fa-book")
+                        |Blog
+                li
+                    a.link(href="/contact")
+                        i(class="fa-solid fa-envelope")
+                        |Contact
         div.foot
             div.social
-                li.icon #[a(href="/") #[i(class="fa-brands fa-x-twitter")]]
-                li.icon #[a(href="/") #[i(class="fa-brands fa-facebook")]]
-                li.icon #[a(href="/") #[i(class="fa-brands fa-instagram")]]
-                li.icon #[a(href="/") #[i(class="fa-brands fa-github")]]
+                li.icon
+                    a(href="https://twitter.com/Ravi_Panchal0", target="_blank")
+                        i(class="fa-brands fa-x-twitter")
+                li.icon
+                    a(href="https://www.facebook.com/profile.php?id=100006394922280", target="_blank")
+                        i(class="fa-brands fa-facebook")
+                li.icon
+                    a(href="https://www.instagram.com/royal_indori_r.p/", target="_blank")
+                        i(class="fa-brands fa-instagram")
+                li.icon
+                    a(href="https://github.com/Ravipanchal0/", target="_blank")
+                        i(class="fa-brands fa-github")
+
             div.copyright
-                p Copyright &copy; 2023 
+                p Copyright &copy; 2023 Ravi Panchal
                 p All Right Reserve.
     div.container
         block content
+
+    block scripts
+        script(src="https://kit.fontawesome.com/fe1b9c3ff1.js" crossorigin="anonymous")
+        script(src='../static/index.js')

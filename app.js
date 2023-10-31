@@ -33,6 +33,9 @@ app.get("/contact", (req, res) => {
   para = { title: "Let's Connect to Ravi Panchal" };
   res.status(200).render("contact.pug", para);
 });
+app.get("*", function (req, res) {
+  res.status(404).render("404.pug");
+});
 
 app.listen(port, () => {
   console.log(`server start on http://localhost:${port}`);

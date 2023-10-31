@@ -7,28 +7,27 @@ block style
 
 
 block content
-    div.contactContainer
-        div.heading
-            h1 Contact Me .
-            i.fa-solid.fa-envelope.icon
-        div.main
-            h1.sectionHeading Let's Talk
-            form.contact(action="action.php" method="post")
-                .input-box
-                    input#name.input(type="text")
-                    label(for="name") Name
-                .input-box
-                    input#email.input(type="email")
-                    label(for="email") Email
-                .input-box
-                    textarea(name="msg", cols="30", rows="10")#msg.input
-                    label(for="msg")#msg-label How can I help you?
-                .button
-                    button.btn SEND MESSAGE
-            .contact-detail
-                .connect
-                    i.fa-solid.fa-location-dot
-                    .address Indore,  Madhya-Pradesh, India
-                .connect
-                    i.fa-solid.fa-phone
-                    .number +91 9977101024
+    div.heading
+        h1 Contact Me .
+        i.fa-solid.fa-envelope.icon
+    div.main
+        h1.sectionHeading Let's Talk
+        form.contact(action="action.php" method="post")
+            .input-box
+                input#name.input(type="text")
+                label(for="name") Name
+            .input-box
+                input#email.input(type="email")
+                label(for="email") Email
+            .input-box
+                textarea(name="msg", cols="30", rows="10")#msg.input
+                label(for="msg")#msg-label How can I help you?
+            .button
+                button.btn#sendMSG SEND MESSAGE
+        .contact-detail
+            .connect
+                i.fa-solid.fa-location-dot
+                .address Indore,  Madhya-Pradesh, India
+            .connect
+                i.fa-solid.fa-phone
+                .number +91 99771 01024

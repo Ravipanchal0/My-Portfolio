@@ -7,83 +7,103 @@ block style
 
 
 block content
-  div.resumecontainer
-        div.heading
-            h1 My Resume .
-            i.fa-solid.fa-id-card.icon
-        div.main
-          div.mainsection
-            h4.sectionHeading EXPERIENCE
-            div.projects
-              h3.myproject My Projects
-              ul
-                li.project-detail
-                  span.line
-                  h5.project-name Project 1
-                  p.project-desc India, officially the Republic of India, is a country in South Asia. It is the seventh-largest country by area; the most populous country as of June 2023;
-                li.project-detail
-                  span.line
-                  h5.project-name Project 1
-                  p.project-desc India, officially the Republic of India, is a country in South Asia. It is the seventh-largest country by area; the most populous country as of June 2023;
-                li.project-detail
-                  span.line
-                  h5.project-name Project 1
-                  p.project-desc India, officially the Republic of India, is a country in South Asia. It is the seventh-largest country by area; the most populous country as of June 2023;
-          div.mainsection
-            h4.sectionHeading EDUCATION
-            ul.education
-              li.eduction-details
-                span.line
-                div.year
-                  p.to 2023
-                  p.from 2019
-                h5.class-name Bachelor of Technology (Mechanical Engineering)
-                p.academy Govt. Engineering College, Ujjain
-                p.class-detail India, officially the Republic of India, is a country in South Asia. It is the seventh-largest country by area; the most populous country as of June 2023;
-              li.eduction-details
-                span.line
-                div.year
-                  p.to 2018
-                  p.from 2017
-                h5.class-name High Secondary school - 12th
-                p.academy Govt. Excellence Bal Vinay Mandir H S School, Indore
-                p.class-detail India, officially the Republic of India, is a country in South Asia. It is the seventh-largest country by area; the most populous country as of June 2023;
-              li.eduction-details
-                span.line
-                div.year
-                  p.to 2016
-                  p.from 2015
-                h5.class-name High School - 10th
-                p.academy Govt. High School Baloda(takun), sanwer
-                p.class-detail India, officially the Republic of India, is a country in South Asia. It is the seventh-largest country by area; the most populous country as of June 2023;
-        div.skills
-          div.skillSection
-            h2.sectionHeading DESIGN SKILLS
-            .skill-main
-              .skill-wrrap
-                .skill-name #[img(src="../../static/img/xd.png").icon] Adobe XD
-                .skill-bar
-                  .skill-per(per='30').xd
-          div.skillSection
-            h2.sectionHeading CODING SKILLS
-            .skill-main
-              .skill-wrrap
-                .skill-name #[img(src="../../static/img/html.png").icon] HTML
-                .skill-bar
-                  .skill-per(per='80').html
-              .skill-wrrap
-                .skill-name #[img(src="../../static/img/css.png").icon] CSS
-                .skill-bar
-                  .skill-per(per='85').css
-              .skill-wrrap
-                .skill-name #[img(src="../../static/img/js.png").icon] Javascript
-                .skill-bar
-                  .skill-per(per='65').js
-              .skill-wrrap
-                .skill-name #[img(src="../../static/img/tcss.png").icon] Tailwind CSS
-                .skill-bar
-                  .skill-per(per='75').tcss
-              .skill-wrrap
-                .skill-name #[img(src="../../static/img/react.png").icon] React JS
-                .skill-bar
-                  .skill-per(per='45').react
+  div.heading
+    h1 My Resume .
+    i.fa-solid.fa-id-card.icon
+  div.main
+    div.mainsection
+      h4.sectionHeading EXPERIENCE
+      div.projects
+        h3.myproject My Projects
+        ul
+          li.project-detail
+            span.line
+            h5.project-name Unity Health Hub
+            p.academy A Hospital management website
+            p.project-desc This is a React based website, which is a hospital management website design. In which we can add new doctors, patients and hospital departments.
+            p Visit : #[a.link(href="https://github.com/Ravipanchal0/Unity-Health-Hub", target="_blank") https://github.com/Ravipanchal0/Unity-Health-Hub]
+
+          li.project-detail
+            span.line
+            h5.project-name Alarm Clock
+            p.academy Alarm Clock using HTML, CSS and javascript
+            p.project-desc This is an alarm clock, it is built using HTML, CSS and JAVASCRIPT. You can set alarm or your important event for reminder. This will alert you at your setting time.
+            p Visit : #[a.link(href="https://ravipanchal0.github.io/Alarm-Clock/", target="_blank") https://ravipanchal0.github.io/Alarm-Clock/]
+
+          li.project-detail
+            span.line
+            h5.project-name Text Mastery
+            p.academy Text analyzer and manipulator
+            p.project-desc I have created this web page using JavaScript library <b>React</b>. You can analyze and manipulate your text using this site. Apart from this I have also made a button for dark mode and light mode.
+            p Visit : #[a.link(href="https://ravipanchal0.github.io/textMastery/", target="_blank") https://ravipanchal0.github.io/textMastery/]
+
+          li.project-detail
+            span.line
+            h5.project-name My Portfolio website
+            p.academy Here you can know all about me.
+            p.project-desc you can here...
+            p Visit : #[a.link(href="https://github.com/Ravipanchal0/My-Portfolio", target="_blank") https://github.com/Ravipanchal0/My-Portfolio]
+
+          li.project-detail
+            span.line
+            h5.project-name Other Projects
+            p.project-desc I have created a Club Membership Form using Nodejs and pug template engine, landkit site, Facebook logIn/signUp page clone, Gym registration landing page, Food ordering site, Calculator, Analog Watch, Age Calculator, Password Manager, Portfolio landing page, E-commerce website landing page(FreshCart).
+
+    div.mainsection
+      h4.sectionHeading EDUCATION
+      ul.education
+        li.eduction-details
+          span.line
+          div.year
+            p.to 2023
+            p.from 2019
+          h5.class-name Bachelor of Technology (Mechanical Engineering)
+          p.academy Govt. Engineering College, Ujjain
+          p.class-detailI I have completed my bachelor's degree in mechanical engineering from Govt. Engineering college which is located in Ujjain, Madhya Pradesh, India. During my college time, I made a project with my friends which is <b>Cleanbot: Automatic Cleaning Vehicle</b>, my work in this project was coding part.
+        li.eduction-details
+          span.line
+          div.year
+            p.to 2018
+            p.from 2017
+          h5.class-name High Secondary school - 12th
+          p.academy Govt. Excellence Bal Vinay Mandir H S School, Indore
+          p.class-detail I have done my higher secondary education from Govt. Excellence Bal Vinay Mandir H S School, Indore. And at the same time I was also preparing for the entrance exam. 
+        li.eduction-details
+          span.line
+          div.year
+            p.to 2016
+            p.from 2015
+          h5.class-name High School - 10th
+          p.academy Govt. High School Baloda(takun), sanwer
+          p.class-detail I did my high school from my village school, Government High School, Baloda(Takun), sanwer. Here I participated in many events and competitions and received many awards and certificates.
+  div.skills
+    div.skillSection
+      h2.sectionHeading DESIGN SKILLS
+      .skill-main
+        .skill-wrrap
+          .skill-name #[img(src="../../static/img/figma.png").icon] Figma
+          .skill-bar
+            .skill-per(per='20').figma
+    div.skillSection
+      h2.sectionHeading CODING SKILLS
+      .skill-main
+        .skill-wrrap
+          .skill-name #[img(src="../../static/img/html.png").icon] HTML
+          .skill-bar
+            .skill-per(per='80').html
+        .skill-wrrap
+          .skill-name #[img(src="../../static/img/css.png").icon] CSS
+          .skill-bar
+            .skill-per(per='85').css
+        .skill-wrrap
+          .skill-name #[img(src="../../static/img/js.png").icon] Javascript
+          .skill-bar
+            .skill-per(per='65').js
+        .skill-wrrap
+          .skill-name #[img(src="../../static/img/tcss.png").icon] Tailwind CSS
+          .skill-bar
+            .skill-per(per='75').tcss
+        .skill-wrrap
+          .skill-name #[img(src="../../static/img/react.png").icon] React JS
+          .skill-bar
+            .skill-per(per='45').react
