@@ -4,8 +4,7 @@
   "description": "My name is ravi Panchal and this is work show as a my portfolio.",
   "main": "app.js",
   "scripts": {
-    "build": "babel src -d lib",
-    "test": "jest"
+    "start": "node app.js"
   },
   "author": "Ravi Panchal",
   "license": "ISC",

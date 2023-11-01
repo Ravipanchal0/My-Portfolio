@@ -1,5 +1,7 @@
 [build]
-  functions = "functions"
-  command = "yarn run build"  # Adjust this to your actual build command
-  publish = "C:\Users\hp\Desktop\My Portfolio\public"  # Specify the directory containing your built static files
+  base = "public"
+  command = "npm run build"  # Replace with the build command for your Express app
+  publish = "public"  # Replace with the directory where your static files are generated
 
+[context.production]
+  command = "npm run start"  # Replace with the start command for your Express app
