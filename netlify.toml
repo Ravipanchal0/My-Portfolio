@@ -1,2 +1,5 @@
 [build]
   functions = "functions"
+  command = "yarn run build"  # Adjust this to your actual build command
+  publish = "C:\Users\hp\Desktop\My Portfolio\public"  # Specify the directory containing your built static files
+
