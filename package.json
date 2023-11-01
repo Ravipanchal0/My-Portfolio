@@ -4,7 +4,8 @@
   "description": "My name is ravi Panchal and this is work show as a my portfolio.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run build"
   },
   "author": "Ravi Panchal",
   "license": "ISC",
